@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Art by Grace</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav" id="nav">
+      <input type="checkbox" id="nav__check" checked="checked" />
+      <div class="nav__logo">
+        <a href="index.html"><h1>Art by Grace</h1></a>
+      </div>
+      <div class="nav__links">
+        <a href="photographs.html" class="nav__link"
+          >Photography
+          <div class="navBottomBorder"></div
+        ></a>
+        <a href="painting.html" class="nav__link"
+          >Painting
+          <div class="navBottomBorder"></div
+        ></a>
+        <a href="other.html" class="nav__link"
+          >Other Media
+          <div class="navBottomBorder"></div
+        ></a>
+        <a href="#" class="nav__link"
+          >Contact
+          <div class="navBottomBorder"></div
+        ></a>
+        <a
+          href="https://www.instagram.com/graces._.art11/"
+          class="nav__link nav__social"
+          target="_blank"
+          ><svg
+            class="instagram-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="384px"
+            height="384px"
+          >
+            <path
+              d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"
+            />
+            <defs>
+              <linearGradient id="MyGradient" gradientTransform="rotate(120)">
+                <stop offset="0%" stop-color="#fbae04" />
+                <stop offset="25%" stop-color="#fb5114" />
+                <stop offset="55%" stop-color="#fb048e" />
+                <stop offset="75%" stop-color="#990bf5" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </a>
+      </div>
+
+      <label class="nav__menu-icon" for="nav__check">
+        <div class="nav__menu"></div>
+      </label>
+      <div class="nav__mobile-links">
+        <a href="photographs.html" class="nav__mobile-link"
+          >Photography
+          <div class="mobileBottomBorder"></div
+        ></a>
+        <a href="painting.html" class="nav__mobile-link"
+          >Painting
+          <div class="mobileBottomBorder"></div
+        ></a>
+        <a href="other.html" class="nav__mobile-link"
+          >Other Media
+          <div class="mobileBottomBorder"></div
+        ></a>
+        <a href="#" class="nav__mobile-link"
+          >Contact
+          <div class="mobileBottomBorder"></div
+        ></a>
+      </div>
+    </nav>
+    <div class="slideshow">
+      <!-- Full-width images with number and caption text -->
+      <div class="slideshow__slides slideshow__fade">
+        <img
+          src="static/img/sneeze.jpeg"
+          style="width: 100%; height: 100vh; object-fit: cover"
+        />
+        <div class="slideshow__text">sneeze</div>
+      </div>
+
+      <div class="slideshow__slides slideshow__fade">
+        <img
+          src="static/img/him.jpeg"
+          style="width: 100%; height: 100vh; object-fit: cover"
+        />
+        <div class="slideshow__text">him</div>
+      </div>
+
+      <div class="slideshow__slides slideshow__fade">
+        <img
+          src="static/img/thecampus.jpeg"
+          style="width: 100%; height: 100vh; object-fit: cover"
+        />
+        <div class="slideshow__text">the campus</div>
+      </div>
+
+      <div class="slideshow__slides slideshow__fade">
+        <img
+          src="static/img/thebridge.jpeg"
+          style="width: 100%; height: 100vh; object-fit: cover"
+        />
+        <div class="slideshow__text">the bridge</div>
+      </div>
+
+      <div class="slideshow__slides slideshow__fade">
+        <img
+          src="static/img/exploration.jpeg"
+          style="width: 100%; height: 100vh; object-fit: cover"
+        />
+        <div class="slideshow__text">exploration</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="slideshow__prev" onclick="plusSlides(-1)"
+        ><span class="material-symbols-outlined">chevron_left</span></a
+      >
+      <a class="slideshow__next" onclick="plusSlides(1)"
+        ><span class="material-symbols-outlined">chevron_right</span></a
+      >
+
+      <div class="slideshow__dots">
+        <span
+          class="material-symbols-outlined slideshow__dot"
+          onclick="currentSlide(1)"
+          >radio_button_unchecked</span
+        >
+        <span
+          class="material-symbols-outlined slideshow__dot"
+          onclick="currentSlide(2)"
+          >radio_button_unchecked</span
+        >
+        <span
+          class="material-symbols-outlined slideshow__dot"
+          onclick="currentSlide(3)"
+          >radio_button_unchecked</span
+        >
+        <span
+          class="material-symbols-outlined slideshow__dot"
+          onclick="currentSlide(4)"
+          >radio_button_unchecked</span
+        >
+        <span
+          class="material-symbols-outlined slideshow__dot"
+          onclick="currentSlide(5)"
+          >radio_button_unchecked</span
+        >
+      </div>
+
+      <div class="slideshow__title">
+        Artwork by Grace Murray
+        <div id="titleBottomBorder"></div>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div class="gallery__column">
+        <a class="gallery__link">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/him.jpeg"
+              alt="Portrait by Jessica Felicio"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">him</figcaption>
+          </figure>
+        </a>
+        <a class="gallery__link">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/exploration.jpeg"
+              alt="Portrait by Jessica Felicio"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">exploration</figcaption>
+          </figure>
+        </a>
+        <a class="gallery__link">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/sneeze.jpeg"
+              alt="Portrait by Jessica Felicio"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">sneeze</figcaption>
+          </figure>
+        </a>
+        <a class="gallery__link">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/thecampus.jpeg"
+              alt="Portrait by Jessica Felicio"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">campus</figcaption>
+          </figure>
+        </a>
+        <a class="gallery__link">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/sneeze.jpeg"
+              alt="Portrait by Jessica Felicio"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">sneeze</figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="gallery__column">
+        <a class="gallery__link">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/him.jpeg"
+              alt="Portrait by Jessica Felicio"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">him</figcaption>
+          </figure>
+        </a>
+        <a class="gallery__link">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/him.jpeg"
+              alt="Portrait by Jessica Felicio"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">him</figcaption>
+          </figure>
+        </a>
+        <a class="gallery__link">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/him.jpeg"
+              alt="Portrait by Jessica Felicio"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">him</figcaption>
+          </figure>
+        </a>
+        <a class="gallery__link">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/him.jpeg"
+              alt="Portrait by Jessica Felicio"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">him</figcaption>
+          </figure>
+        </a>
+        <a class="gallery__link">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/him.jpeg"
+              alt="Portrait by Jessica Felicio"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">him</figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="gallery__column">
+        <a class="gallery__link">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/him.jpeg"
+              alt="Portrait by Jessica Felicio"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">him</figcaption>
+          </figure>
+        </a>
+        <a class="gallery__link">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/him.jpeg"
+              alt="Portrait by Jessica Felicio"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">him</figcaption>
+          </figure>
+        </a>
+        <a class="gallery__link">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/him.jpeg"
+              alt="Portrait by Jessica Felicio"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">him</figcaption>
+          </figure>
+        </a>
+        <a class="gallery__link">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/him.jpeg"
+              alt="Portrait by Jessica Felicio"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">him</figcaption>
+          </figure>
+        </a>
+        <a class="gallery__link">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/him.jpeg"
+              alt="Portrait by Jessica Felicio"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">him</figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="gallery__column">
+        <a class="gallery__link">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/him.jpeg"
+              alt="Portrait by Jessica Felicio"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">him</figcaption>
+          </figure>
+        </a>
+        <a class="gallery__link">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/him.jpeg"
+              alt="Portrait by Jessica Felicio"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">him</figcaption>
+          </figure>
+        </a>
+        <a class="gallery__link">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/him.jpeg"
+              alt="Portrait by Jessica Felicio"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">him</figcaption>
+          </figure>
+        </a>
+        <a class="gallery__link">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/him.jpeg"
+              alt="Portrait by Jessica Felicio"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">him</figcaption>
+          </figure>
+        </a>
+        <a class="gallery__link">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/him.jpeg"
+              alt="Portrait by Jessica Felicio"
+              class="gallery__image"
+            />
+            <figcaption class="gallery__caption">him</figcaption>
+          </figure>
+        </a>
+      </div>
+    </div>
+
+    <h2 class="about__header">About the Artist</h2>
+    <div class="about">
+      <div class="about__thumb">
+        <img class="about__image" src="static/img/Grace.jpeg" />
+      </div>
+      <div class="about__info">
+        <p class="about__desc">
+          Grace Murray is from Hershey, Pennsylvania and is currently a senior
+          studying both Studio Arts and Chemistry at the University of
+          Pittsburgh. Interested in science since childhood, she developed
+          intense curiosities for medicine, chemistry, and the human form. Only
+          in high school did Grace find her interest in art and color, and now
+          in college she looks to combine these two passions. Her primary medium
+          is painting, though recent explorations have led to desires to
+          introduce sculptural elements into her works. She has also used
+          photography to capture the world around her. In addition to scientific
+          topics, she explores themes of grief and loss following the passing of
+          her parents. She uses her art as a form of therapy to process
+          information and emotions and share them with others; she hopes to
+          continue this practice as she grows as both an artist and individual.
+        </p>
+        <button class="about__btn">Reach Out</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <a href="" class="footer__email">Email</a>
+      <p class="footer__copyright">Copyright. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
