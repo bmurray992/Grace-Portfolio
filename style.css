@@ -16,8 +16,6 @@ body {
     padding: 0;
 }
 
-
-
 .nav {
     color: white;
     position: fixed;
@@ -269,36 +267,6 @@ body {
   animation-duration: 1.5s;
 }
 
-.slideshow__title {
-  width: 30vw;
-  min-width: 200px;
-  font-family: 'Bodoni Moda', serif;
-  font-size: 45px;
-  position: absolute;
-  left: 35%;
-  color: white;
-  text-align: center;
-  top: 40%; 
-  cursor: pointer;
-  
-}
-
-#titleBottomBorder {
-  width: 30%;
-  border-bottom: white 2px solid;
-  position: absolute;
-  bottom: -10px;
-  left: 35%;
-  transition: 0.6s ease;
-}
-
-.slideshow__title:hover #titleBottomBorder {
-  width: 100%;
-  left: 0%;
-}
-
-
-
 
 .gallery {
   display: flex;
@@ -443,6 +411,7 @@ body {
 .footer__email, .footer__copyright {
   margin-left: 10px;
   margin-right: 10px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .footer__email {
