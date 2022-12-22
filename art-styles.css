@@ -216,12 +216,13 @@
   color: var(--main-accent);
 }
 
-.close {
+.modal__close {
   position: absolute;
   top: 20px;
   right: 20px;
   color: white;
   cursor: pointer;
+  font-size: 100px;
 }
 
 @keyframes fade {
