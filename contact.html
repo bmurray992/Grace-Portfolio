@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Other Media by Grace</title>
+    <title>Contact Me</title>
     <meta charset="UTF-8" />
     <link
       rel="apple-touch-icon"
@@ -22,6 +22,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="art-styles.css" />
+    <link rel="stylesheet" href="contact-style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -50,11 +51,11 @@
           >Painting
           <div class="navBottomBorder"></div
         ></a>
-        <a href="other.html" class="nav__link nav__current-page"
+        <a href="other.html" class="nav__link"
           >Other Media
           <div class="navBottomBorder"></div
         ></a>
-        <a href="contact.html" class="nav__link"
+        <a href="contact.html" class="nav__link nav__current-page"
           >Contact
           <div class="navBottomBorder"></div
         ></a>
@@ -96,11 +97,11 @@
           >Painting
           <div class="mobileBottomBorder"></div
         ></a>
-        <a href="other.html" class="nav__mobile-link nav__current-page"
+        <a href="other.html" class="nav__mobile-link"
           >Other Media
           <div class="mobileBottomBorder"></div
         ></a>
-        <a href="contact.html" class="nav__mobile-link"
+        <a href="contact.html" class="nav__mobile-link nav__current-page"
           >Contact
           <div class="mobileBottomBorder"></div
         ></a>
@@ -108,25 +109,41 @@
     </nav>
     <header class="header">
       <h1 class="header__title">
-        <span class="header__color">Other Media</span> by Grace
+        <span class="header__color">Contact</span> Me
       </h1>
     </header>
-
-    <div class="photos">
-      <div class="photos__photo">
-        <img src="static/img/him.jpeg" class="photos__image" />
-        <div class="photos__desc">
-          <h2 class="photos__title">Him</h2>
-          <p class="photos__medium">Digital Photography</p>
-          <p class="photos__dims">36" x 48"</p>
-          <p class="photos_year">2022</p>
-        </div>
+    <article class="contact">
+      <div class="contact__card">
+        <img class="contact__image" src="static/img/Grace.jpeg" />
+        <form class="contact__form">
+          <h2 class="contact__title">Reach out, let's chat!</h2>
+          <input
+            type="text"
+            placeholder="What's your name?"
+            class="contact__input contact__name"
+          />
+          <input
+            type="email"
+            placeholder="What's you email?"
+            class="contact__input contact__email"
+          />
+          <textarea
+            class="contact__input contact__message"
+            placeholder="What's your message?"
+          ></textarea>
+          <input
+            type="button"
+            value="Submit"
+            class="contact__input contact__submit"
+          />
+        </form>
       </div>
-    </div>
-
+    </article>
     <footer class="footer">
       <a href="" class="footer__email">Email</a>
       <p class="footer__copyright">Copyright. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
