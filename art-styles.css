@@ -355,9 +355,8 @@
   }
 
   .modal__body {
-    top: 25%;
-    left: 25%;
-    transform: translate(25%, 25%);
+    top: 0;
+    left: 0;
     background: white;
     width: 100vw;
     height: 100vh;
