@@ -540,10 +540,11 @@ body {
   }
   .about {
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     margin: 0px;
     padding: 0px;
     width: 100%;
+    position: block;
   }
 
   .about__thumb {
