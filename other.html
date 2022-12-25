@@ -111,22 +111,112 @@
         <span class="header__color">Other Media</span> by Grace
       </h1>
     </header>
-
-    <div class="photos">
-      <div class="photos__photo">
-        <img src="static/img/him.jpeg" class="photos__image" />
-        <div class="photos__desc">
-          <h2 class="photos__title">Him</h2>
-          <p class="photos__medium">Digital Photography</p>
-          <p class="photos__dims">36" x 48"</p>
-          <p class="photos_year">2022</p>
+    <div class="gallery">
+      <div class="gallery__column">
+        <a class="gallery__link" onclick="onClick(this)">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/untitled2.1-2.3.jpeg"
+              alt="A set of three space themed mixed media pieces"
+              class="gallery__image"
+              loading="lazy"
+            />
+            <figcaption class="gallery__caption">Untitled (2.1-2.3)</figcaption>
+            <figcaption class="gallery__caption2">Mixed Media</figcaption>
+            <figcaption class="gallery__caption3">9" x 12"</figcaption>
+            <figcaption class="gallery__caption4">2021</figcaption>
+          </figure>
+        </a>
+        <a class="gallery__link" onclick="onClick(this)">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/untitled2.1.jpeg"
+              alt="A set of three space themed mixed media pieces"
+              class="gallery__image"
+              loading="lazy"
+            />
+            <figcaption class="gallery__caption">Untitled 2.1</figcaption>
+            <figcaption class="gallery__caption2">Mixed Media</figcaption>
+            <figcaption class="gallery__caption3">9" x 12"</figcaption>
+            <figcaption class="gallery__caption4">2021</figcaption>
+          </figure>
+        </a>
+        <a class="gallery__link" onclick="onClick(this)">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/untitled2.2.jpeg"
+              alt="A set of three space themed mixed media pieces"
+              class="gallery__image"
+              loading="lazy"
+            />
+            <figcaption class="gallery__caption">Untitled 2.2</figcaption>
+            <figcaption class="gallery__caption2">Mixed Media</figcaption>
+            <figcaption class="gallery__caption3">9" x 12"</figcaption>
+            <figcaption class="gallery__caption4">2021</figcaption>
+          </figure>
+        </a>
+        <a class="gallery__link" onclick="onClick(this)">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/untitled2.3.jpeg"
+              alt="A set of three space themed mixed media pieces"
+              class="gallery__image"
+              loading="lazy"
+            />
+            <figcaption class="gallery__caption">Untitled 2.3</figcaption>
+            <figcaption class="gallery__caption2">Mixed Media</figcaption>
+            <figcaption class="gallery__caption3">9" x 12"</figcaption>
+            <figcaption class="gallery__caption4">2021</figcaption>
+          </figure>
+        </a>
+        <a class="gallery__link" onclick="onClick(this)">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/thebottle.jpeg"
+              alt="A New Amsterdam bottle drawing"
+              class="gallery__image"
+              loading="lazy"
+            />
+            <figcaption class="gallery__caption">The Bottle</figcaption>
+            <figcaption class="gallery__caption2">Charcoal Pencil</figcaption>
+            <figcaption class="gallery__caption3">5" x 18"</figcaption>
+            <figcaption class="gallery__caption4">2022</figcaption>
+          </figure>
+        </a>
+        <a class="gallery__link" onclick="onClick(this)">
+          <figure class="gallery__thumb">
+            <img
+              src="static/img/sneeze1.jpeg"
+              alt="A set of three space themed mixed media pieces"
+              class="gallery__image"
+              loading="lazy"
+            />
+            <figcaption class="gallery__caption">Untitled 2.3</figcaption>
+            <figcaption class="gallery__caption2">Mixed Media</figcaption>
+            <figcaption class="gallery__caption3">9" x 12"</figcaption>
+            <figcaption class="gallery__caption4">2021</figcaption>
+          </figure>
+        </a>
+      </div>
+    </div>
+    <div id="modal" class="gallery__modal" onclick="this.style.display='none'">
+      <span class="modal__close material-symbols-outlined">close</span>
+      <div class="modal__body">
+        <img id="image" class="modal__image" />
+        <div class="modal__desc">
+          <h2 class="modal__title" id="title"></h2>
+          <p class="modal__medium" id="medium"></p>
+          <p class="modal__dims" id="dims"></p>
+          <p class="modal__year" id="year"></p>
         </div>
       </div>
     </div>
 
     <footer class="footer">
-      <a href="" class="footer__email">Email</a>
+      <a href="gvmurray955@gmail.com" class="footer__email">Email</a>
       <p class="footer__copyright">Copyright. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
