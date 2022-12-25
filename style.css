@@ -562,6 +562,11 @@ body {
     width: 100%;
     padding: 15px;
     background-color: white;
-    border-radius: none;
+    border-radius: 0px;
+  }
+
+  .about__btn {
+    background: black;
+    color: white;
   }
 }
