@@ -541,8 +541,8 @@ body {
   .about {
     flex-direction: column;
     justify-content: center;
-    margin: none;
-    padding: none;
+    margin: 0px;
+    padding: 0px;
     width: 100%;
   }
 
