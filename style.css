@@ -541,23 +541,22 @@ body {
   .about {
     flex-direction: column;
     justify-content: center;
+    margin: none;
+    padding: none;
+    width: 100%;
   }
 
   .about__thumb {
     margin-top: 0px;
     margin-right: 0px;
+    width: 100%;
   }
 
   .about__info {
     margin-bottom: 0px;
     margin-left: 0px;
     box-shadow: none;
-    width: 400px;
+    width: 100%;
     padding: 15px;
-  }
-
-  .about__desc {
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
   }
 }
