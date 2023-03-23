@@ -228,12 +228,21 @@
 
 .main {
   margin: 0vh 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .main__title {
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: 30px;
+}
+.main__image {
+  width: 60vw;
+  height: auto;
 }
 .main__text {
+  margin-top: 50px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
