@@ -1,5 +1,7 @@
 :root {
+  --main: #f9fafd;
   --main-accent: #9cc0ab;
+  --secondary-accent: #384351;
 }
 * {
   box-sizing: border-box;
@@ -12,10 +14,10 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--main);
 }
 
 .nav {
-  color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -24,7 +26,9 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+  background-color: var(
+    --main
+  ); /*linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));*/
   transition: 0.3s ease;
   height: 100px;
 }
@@ -37,7 +41,7 @@ body {
   font-family: "Poppins", sans-serif;
   transition: 0.4s ease;
   text-decoration: none;
-  color: white;
+  color: var(--secondary-accent);
   font-size: 18px;
   height: 100%;
   padding-left: 5px;
@@ -81,7 +85,7 @@ body {
 
 .navBottomBorder {
   width: 0%;
-  border-bottom: rgba(0, 0, 0, 0) 2px solid;
+  border-bottom: var(--main) 2px solid;
   position: absolute;
   bottom: 5px;
   left: 35%;
@@ -95,7 +99,7 @@ body {
 }
 
 .instagram-svg {
-  fill: white;
+  fill: var(--secondary-accent);
   width: 32px;
   height: 32px;
   transition: 0.6s ease;
@@ -124,10 +128,10 @@ body {
 }
 .nav__active .nav__link,
 .nav__active .nav__logo {
-  color: black;
+  color: var(--secondary-accent);
 }
 .nav__active .nav__social svg {
-  fill: black;
+  fill: var(--secondary-accent);
 }
 .nav__active .nav__links a:hover .navBottomBorder {
   border-bottom: var(--main-accent) solid 2px;
@@ -327,14 +331,14 @@ body {
 }
 
 .about__header {
-  color: black;
+  color: var(--secondary-accent);
   font-size: 40px;
   font-family: "Bodoni Moda", serif;
   text-align: center;
 }
 
 .about {
-  background: white;
+  /* background: white;*/
   display: flex;
   justify-content: center;
   position: relative;
@@ -358,7 +362,7 @@ body {
   margin-bottom: 0px;
   margin-left: -60px;
   border-radius: 5px;
-  background-color: var(--main-accent);
+  background-color: white;
   color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 600px;
@@ -375,7 +379,7 @@ body {
 }
 
 .about__btn {
-  background: white;
+  background: var(--main-accent);
   text-decoration: none;
   color: black;
   border: 2px transparent solid;
@@ -407,6 +411,7 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   font-family: "Poppins", sans-serif;
+  font-size: 12px;
 }
 
 .footer__email {

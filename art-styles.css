@@ -226,6 +226,18 @@
   font-size: 36px;
 }
 
+.main {
+  margin: 0vh 10vw;
+}
+.main__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+.main__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
 @keyframes fade {
   from {
     opacity: 0.6;
