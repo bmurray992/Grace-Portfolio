@@ -345,6 +345,77 @@
   border-radius: 10px;
 }
 
+.location {
+  margin: 20px 100px 100px 100px;
+}
+.location__header {
+  margin-top: 100px;
+  color: var(--secondary-accent);
+  font-size: 40px;
+  font-family: "Bodoni Moda", serif;
+  text-align: center;
+}
+
+.location {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+.location__img {
+  object-fit: cover;
+  width: auto;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.location__info {
+  color: black;
+  width: 50%;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.action {
+  margin: 20px 100px 100px 100px;
+}
+.action__header {
+  margin-top: 100px;
+  color: var(--secondary-accent);
+  font-size: 40px;
+  font-family: "Bodoni Moda", serif;
+  text-align: center;
+}
+
+.action {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+.action__img {
+  object-fit: cover;
+  width: auto;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.action__info {
+  color: black;
+  width: 50%;
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.action__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
 @keyframes fade {
   from {
     opacity: 0.6;
