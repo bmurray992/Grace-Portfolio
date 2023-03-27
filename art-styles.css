@@ -400,6 +400,42 @@
   font-size: 16px;
 }
 
+.debi {
+  margin: 20px 100px 100px 100px;
+}
+.debi__header {
+  margin-top: 100px;
+  color: var(--secondary-accent);
+  font-size: 40px;
+  font-family: "Bodoni Moda", serif;
+  text-align: center;
+}
+
+.debi {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+.debi__img {
+  object-fit: cover;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.debi__info {
+  color: black;
+  width: 50%;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+.debi_image {
+  border-radius: 10px;
+  height: 600px;
+  width: 600px;
+}
 .action {
   margin: 20px 100px 100px 100px;
 }
