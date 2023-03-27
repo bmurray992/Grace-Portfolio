@@ -1,3 +1,11 @@
+:root {
+  --main: #f9fafd;
+  --main-accent: #9cc0ab;
+  --secondary-accent: #384351;
+}
+* {
+  box-sizing: border-box;
+}
 .nav {
   color: white;
   position: fixed;
@@ -8,7 +16,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background: white;
+  background: var(--main);
   transition: 0.3s ease;
   height: 100px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -233,10 +241,6 @@
   justify-content: center;
   align-items: center;
 }
-.main__title {
-  font-family: "Poppins", sans-serif;
-  font-size: 30px;
-}
 
 .link_bar {
   display: flex;
@@ -261,7 +265,6 @@
 .work_gallery {
   display: grid;
   margin-top: 100px;
-
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, auto);
   grid-gap: 10px;
@@ -296,38 +299,50 @@
 }
 
 .main__desc {
-  margin-top: 100px;
+  margin: 20px 100px 100px 100px;
 }
-.main__desc__text {
-  margin-top: 50px;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
+
+.main__desc__header {
+  margin-top: 100px;
+  color: var(--secondary-accent);
+  font-size: 40px;
+  font-family: "Bodoni Moda", serif;
+  text-align: center;
 }
 
 .main__desc__1 {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+.main__desc__img1 {
+  object-fit: cover;
+  width: auto;
+  height: 500px;
+  border-radius: 10px;
 }
 
-.main__desc__img1 {
-  margin-right: 40px;
-  width: auto;
-  height: 400px;
+.main__desc__info {
+  color: black;
+  width: 50%;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
 }
 
 .main__desc__2 {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
+  padding: 20px;
 }
-
 .main__desc__img2 {
-  margin-left: 40px;
+  object-fit: cover;
   width: auto;
-  height: 400px;
+  height: 500px;
+  border-radius: 10px;
 }
 
 @keyframes fade {

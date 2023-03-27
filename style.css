@@ -330,43 +330,82 @@ body {
   transition: 0.3s;
 }
 
-.about__header {
+.body {
+  margin: 20px 100px 100px 100px;
+}
+
+.latest__header {
+  margin-top: 100px;
   color: var(--secondary-accent);
   font-size: 40px;
   font-family: "Bodoni Moda", serif;
   text-align: center;
 }
 
-.about {
-  /* background: white;*/
+.latest {
   display: flex;
-  justify-content: center;
-  position: relative;
-  margin: 20px;
-  margin-top: 70px;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
 }
-
-.about__thumb {
-  margin-top: -40px;
-  margin-right: -10px;
-}
-
-.about__image {
+.latest__img {
   object-fit: cover;
-  width: 400px;
-  height: 400px;
+  width: auto;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.latest__info {
+  color: black;
+  width: 50%;
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.latest__desc {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.index__btn {
+  background: var(--secondary-accent);
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.index__btn:hover {
+  color: white;
+  background-color: var(--main-accent);
+}
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+.about__img {
+  object-fit: cover;
+  width: 500px;
+  height: 500px;
   border-radius: 10px;
 }
 
 .about__info {
-  margin-bottom: 0px;
-  margin-left: -60px;
-  border-radius: 5px;
-  background-color: white;
   color: black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 600px;
-  border-radius: 10px;
+  width: 50%;
   padding: 15px 30px;
   display: flex;
   flex-direction: column;
@@ -378,26 +417,12 @@ body {
   font-size: 16px;
 }
 
-.about__btn {
-  background: var(--main-accent);
-  text-decoration: none;
-  color: black;
-  border: 2px transparent solid;
-  border-radius: 5px;
-  padding: 10px 15px;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s ease;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.about__btn:hover {
-  border: 2px solid white;
-  color: white;
-  transform: scale(1.1);
-  background-color: var(--main-accent);
+.about__header {
+  color: var(--secondary-accent);
+  font-size: 40px;
+  font-family: "Bodoni Moda", serif;
+  text-align: center;
+  margin-top: 100px;
 }
 
 .footer {
