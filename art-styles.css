@@ -534,4 +534,101 @@
     width: 100vw;
     height: 100vh;
   }
+
+  .header {
+    height: 60vh;
+    width: 100vw;
+  }
+
+  .header__title {
+    width: 100%;
+    font-size: 40px;
+    font-family: "Bodoni Moda", serif;
+  }
+
+  .link_bar {
+    display: none;
+  }
+
+  .main {
+    margin: 0px;
+  }
+
+  .work_gallery {
+    grid-template-columns: repeat(1, 100%);
+  }
+
+  .main__desc {
+    margin: 20px;
+    width: 100%;
+  }
+
+  .main__desc__header {
+    font-size: 30px;
+  }
+
+  .main__desc__1 {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+  }
+  .main__desc__img1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .main__desc__info {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .main__desc__2 {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+  }
+  .main__desc__img2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .location {
+    margin: 20px;
+  }
+  .location__header {
+    font-size: 30px;
+  }
+
+  .location {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+  }
+  .location__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .location__info {
+    width: 100%;
+  }
+
+  .action {
+    margin: 20px;
+  }
+  .action__header {
+    font-size: 30px;
+  }
+
+  .action {
+    flex-direction: column;
+  }
+  .action__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .action__info {
+    width: 100%;
+  }
 }
