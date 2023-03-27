@@ -324,6 +324,7 @@
 
 .main__desc {
   margin: 20px 100px 100px 100px;
+  width: 100%;
 }
 
 .main__desc__header {
@@ -339,7 +340,6 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  padding: 20px;
 }
 .main__desc__img1 {
   object-fit: cover;
@@ -360,7 +360,6 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  padding: 20px;
 }
 .main__desc__img2 {
   object-fit: cover;
