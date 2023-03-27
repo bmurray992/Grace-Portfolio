@@ -568,35 +568,47 @@ body {
   .gallery__column {
     width: 100%;
   }
-  .about {
-    flex-direction: column;
-    justify-content: start;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    position: block;
+  .body {
+    margin: 20px;
   }
 
-  .about__thumb {
-    margin-top: 0px;
-    margin-right: 0px;
+  .latest__header {
+    font-size: 30px;
+  }
+
+  .latest {
+    flex-direction: column;
+  }
+  .latest__img {
     width: 100%;
     height: auto;
-    border-radius: none;
+  }
+
+  .latest__info {
+    width: 100%;
+  }
+
+  .latest__desc {
+    font-size: 14px;
+  }
+
+  .about__header {
+    font-size: 30px;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+  .about__img {
+    width: 100%;
+    height: auto;
   }
 
   .about__info {
-    margin-bottom: 0px;
-    margin-left: 0px;
-    box-shadow: none;
     width: 100%;
-    padding: 15px;
-    background-color: white;
-    border-radius: 0px;
   }
 
-  .about__btn {
-    background: black;
-    color: white;
+  .about__desc {
+    font-size: 14px;
   }
 }
