@@ -265,8 +265,8 @@
 .work_gallery {
   display: grid;
   margin-top: 100px;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, auto);
+  grid-template-columns: repeat(6, 10vw);
+  grid-template-rows: repeat(6, 10vw);
   grid-gap: 10px;
 }
 .work_gallery__item {
@@ -279,6 +279,47 @@
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.wg__1 {
+  grid-row: 1 / span 3;
+  grid-column: 1 / span 2;
+}
+.wg__2 {
+  grid-row: 1 / span 2;
+  grid-column: 3 / span 2;
+}
+.wg__3 {
+  grid-row: 1 / span 2;
+  grid-column: 5 / span 2;
+}
+.wg__4 {
+  grid-row: 3 / span 1;
+  grid-column: 3 / span 1;
+}
+.wg__5 {
+  grid-row: 3 / span 1;
+  grid-column: 4 / span 1;
+}
+.wg__6 {
+  grid-row: 3 / span 3;
+  grid-column: 5 / span 2;
+}
+.wg__7 {
+  grid-row: 4 / span 3;
+  grid-column: 1 / span 2;
+}
+.wg__8 {
+  grid-row: 4 / span 3;
+  grid-column: 3 / span 2;
+}
+.wg__9 {
+  grid-row: 6 / span 1;
+  grid-column: 5 / span 1;
+}
+.wg__10 {
+  grid-row: 6 / span 1;
+  grid-column: 6 / span 1;
 }
 
 .main__desc {
@@ -542,8 +583,8 @@
 
   .header__title {
     width: 100%;
-    font-size: 40px;
-    font-family: "Bodoni Moda", serif;
+    text-align: center;
+    font-size: 50px;
   }
 
   .link_bar {
