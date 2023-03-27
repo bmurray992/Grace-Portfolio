@@ -71,19 +71,28 @@
 }
 
 .contact__submit {
-  background-color: black;
+  background: var(--secondary-accent);
+  text-decoration: none;
+  border: none;
   color: white;
-  border: 2px solid white;
   border-radius: 5px;
-  margin-top: 30px;
+  padding: 10px 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
   cursor: pointer;
   transition: 0.3s ease;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .contact__submit:hover {
-  transform: scale(1.05);
-  border-radius: 5px;
-  border: 2px solid black;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: var(--main-accent);
+  border: none;
+}
+
+#my-form-status {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  text-align: center;
 }
