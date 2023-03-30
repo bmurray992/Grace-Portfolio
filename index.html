@@ -37,7 +37,7 @@
   </head>
   <body>
     <nav class="nav" id="nav">
-      <input type="checkbox" id="nav__check" checked="checked" />
+      <input type="checkbox" id="nav__check" />
       <div class="nav__logo">
         <a href="index.html"><h1>Art by Grace</h1></a>
       </div>
@@ -87,6 +87,7 @@
       <label class="nav__menu-icon" for="nav__check">
         <div class="nav__menu"></div>
       </label>
+
       <div class="nav__mobile-links">
         <a href="photographs.html" class="nav__mobile-link"
           >Photography
@@ -110,42 +111,22 @@
       <!-- Full-width images with number and caption text -->
       <div class="slideshow__slides slideshow__fade">
         <img
-          src="static/img/city1.jpeg"
+          src="static/img/latestblur.jpeg"
           style="width: 100%; height: 100vh; object-fit: cover"
         />
-        <div class="slideshow__text">City</div>
+        <div class="slideshow__text">
+          <h2>Check out my Latest Work: 03/05/2047</h2>
+          <a class="index__btn" href="03-05-2047.html">Learn More</a>
+        </div>
       </div>
 
       <div class="slideshow__slides slideshow__fade">
         <img
-          src="static/img/cycles2.jpeg"
+          src="static/img/latestnight.jpeg"
           style="width: 100%; height: 100vh; object-fit: cover"
         />
-        <div class="slideshow__text">Cycles</div>
       </div>
 
-      <div class="slideshow__slides slideshow__fade">
-        <img
-          src="static/img/form1.jpeg"
-          style="width: 100%; height: 100vh; object-fit: cover"
-        />
-        <div class="slideshow__text">Form</div>
-      </div>
-
-      <div class="slideshow__slides slideshow__fade">
-        <img
-          src="static/img/him6.jpeg"
-          style="width: 100%; height: 100vh; object-fit: cover"
-        />
-        <div class="slideshow__text">Him</div>
-      </div>
-
-      <div class="slideshow__slides slideshow__fade">
-        <img
-          src="static/img/Northwestern5.jpeg"
-          style="width: 100%; height: 100vh; object-fit: cover"
-        />
-        <div class="slideshow__text">Northwestern</div>
       </div>
 
       <!-- Next and previous buttons -->
@@ -165,21 +146,6 @@
         <span
           class="material-symbols-outlined slideshow__dot"
           onclick="currentSlide(2)"
-          >radio_button_unchecked</span
-        >
-        <span
-          class="material-symbols-outlined slideshow__dot"
-          onclick="currentSlide(3)"
-          >radio_button_unchecked</span
-        >
-        <span
-          class="material-symbols-outlined slideshow__dot"
-          onclick="currentSlide(4)"
-          >radio_button_unchecked</span
-        >
-        <span
-          class="material-symbols-outlined slideshow__dot"
-          onclick="currentSlide(5)"
           >radio_button_unchecked</span
         >
       </div>
