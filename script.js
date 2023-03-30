@@ -1,15 +1,6 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
-const navbar = document.querySelector(".nav");
-window.onscroll = () => {
-  if (window.scrollY > 300) {
-    navbar.classList.add("nav__active");
-  } else {
-    navbar.classList.remove("nav__active");
-  }
-};
-
 // Next/previous controls
 function plusSlides(n) {
   showSlides((slideIndex += n));
